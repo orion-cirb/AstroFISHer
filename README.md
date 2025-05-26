@@ -32,6 +32,11 @@ Semi-automated processing of images:
 
 Use this macro when the cell automatic segmentation fails, particularly in images with weak cell signal. The macro prompts the user to manually draw the cell of interest before proceeding with nucleus segmentation, RNA puncta detection, and distance calculation.
 
+### Ouput description
+
+* 1 *.zip* file per image: ROIs for the cell, nucleus, and RNA puncta.
+* 1 *results.csv* file for all images in directory with the following columns: image name, cell area, nucleus area,  RNA dot X position, RNA dot Y position, RNA dot is inside nucleus (yes/no), RNA dot distance from nucleus centroid	
+
 ### Dependencies
 
 None
