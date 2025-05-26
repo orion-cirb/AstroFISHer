@@ -19,11 +19,12 @@
      
 ### Macro description
 
-1. Segment cells using background subtraction + gaussian blur + automatic thresholding + median filtering + hole filling + morphological opening + size filtering
-2. Keep cell closest to the image center
-3. Segment cell nucleus using background subtraction + median filtering + automatic thresholding + median filtering + hole filling + watershed splitting + size filtering
-4. Detect RNA puncta within the cell using gaussian blur + maxima finding
-5. Calculate the distance from each punctum to the nucleus centroid
+1. Segment cells using background subtraction + Gaussian blur + automatic thresholding + median filtering + size-selective hole filling + morphological opening + size filtering
+2. Retain the cell closest to the image center
+3. Segment nuclei using background subtraction + median filtering + automatic thresholding + median filtering + hole filling + watershed splitting + size filtering
+4. Retain the nucleus closest to the centroid of the selected cell
+5. Detect RNA puncta within the cell using Gaussian blur + maxima finding
+6. Compute the distance from each RNA punctum to the centroid of the nucleus
 
 ### Dependencies
 
