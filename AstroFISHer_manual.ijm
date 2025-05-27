@@ -13,8 +13,6 @@ cellsChannel = 2;
 nucleiChannel = 1;
 rnaPunctaChannel = 3;
 
-cellsThresholdingMethod = "Huang";
-minCellArea = 1500; // µm2
 nucleiThesholdingMethod = "Otsu";
 minNucleusArea = 150; // µm2
 rnaPunctaProminence = 250;
